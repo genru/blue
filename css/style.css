@@ -3,7 +3,7 @@
 
 /* Main settings */
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Microsoft Yahei', Arial, Helvetica, sans-serif;
 	font-size: 13px;
     line-height: 1;
     margin: 0;
@@ -12,7 +12,7 @@ body {
 	background-repeat: repeat;
 }
 
-#wrapper {	
+#wrapper {
     width: 940px;
 	margin: auto;
 	margin-top: 20px;
@@ -23,7 +23,7 @@ body {
 	-moz-box-shadow: 0px 0px 10px #999;
 	box-shadow: 0px 0px 10px #999;
 	height: auto;
-	overflow:hidden; 
+	overflow:hidden;
 }
 
 #top {
@@ -57,7 +57,7 @@ body {
 }
 
 /* Menu */
-#nav { 
+#nav {
 	margin: 0px;
 	margin-top: 30px;
 	padding: 0px;
@@ -83,7 +83,7 @@ body {
 	padding: 17px 20px;
 	color: #fff;
 	background-color: #00adb3;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	font-size: 11px;
 	font-weight: bold;
 	letter-spacing: 1px;
@@ -119,7 +119,7 @@ body {
 
 #nav ul ul{
 	top: auto;
-}	
+}
 
 #nav li ul ul {
 	left: 100%;
@@ -189,11 +189,11 @@ div.intro {
 
 div.intro h2{
     font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: inherit;
 }
 
 div.intro p {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
     font-size: 14px;
 	color: #666;
 }
@@ -213,13 +213,13 @@ div.intro p {
     float: left;
 }
 
-/* breadcrumb */ 
+/* breadcrumb */
 #breadcrumb {
 	width: 940px;
 	margin-top: 5px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
-} 
+}
 
 #breadcrumb h4 {
     color: #b5b5b5;
@@ -231,7 +231,7 @@ div.intro p {
 	padding-left: 5px;
 	padding-right: 5px;
 	font-size: 12px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	color: #00adb3;
 	text-decoration: none;
 }
@@ -300,7 +300,7 @@ div#feature_list {
 .title {
 	margin: 0px;
 	padding-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: inherit;
     color: #00adb3;
 	font-weight: normal;
 	font-size: 24px;
@@ -309,7 +309,7 @@ div#feature_list {
 div#feature_list ul {
 	position: absolute;
 	top: 0;
-	list-style: none;	
+	list-style: none;
 	padding: 0;
 	margin: 0;
 }
@@ -322,9 +322,9 @@ ul#tabs {
 
 ul#tabs li {
 	font-size: 12px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 }
-		
+
 ul#tabs li img {
 	padding: 5px;
 	border: none;
@@ -334,7 +334,7 @@ ul#tabs li img {
 
 ul#tabs li a {
 	color: #666;
-	text-decoration: none;	
+	text-decoration: none;
 	display: block;
 	padding-left: 20px;
 	padding-top: 20px;
@@ -380,45 +380,45 @@ ul#output li a {
 	background: #000;
 	-moz-border-radius: 5px;
 }
-		
+
 ul#output li a:hover {
 	background: #00adb3;
 }
 
 /*  Header thumbs */
 #preview_wrap {
-	width: 920px; 
+	width: 920px;
 	height: 350px;
 	float: left;
 	padding: 9px;
 	border: 1px solid #ccc;
 	margin-top: 20px;
 }
- 
+
 #preview_outer {
 	overflow: hidden;
 	width: 920px;
 	height: 350px;
 	position: relative;
 }
- 
+
 #preview_inner {
 	text-align: left;
 	height: 100%;
 	position: relative;
 }
- 
+
 #preview_inner div {
 	float: left;
 	width: 920px;
 	height: 350px;
 	position: relative;
 }
- 
+
 #preview_inner div a {
 	position: absolute;
 	bottom: 0;
-	left: 0;	
+	left: 0;
 	display: block;
 	width: 100%;
 	text-indent: 20px;
@@ -428,7 +428,7 @@ ul#output li a:hover {
 	text-decoration: none;
 	font-size: 18px;
 }
- 
+
 #thumbs {
 	margin-top: 20px;
 	position: relative;
@@ -436,7 +436,7 @@ ul#output li a:hover {
 	text-align: center;
 	float: left;
 }
- 
+
 #thumbs span {
 	width: 80px;
 	height: 80px;
@@ -449,7 +449,7 @@ ul#output li a:hover {
 #thumbs span:hover {
 	border: 1px solid #00adb3;
 }
- 
+
 #arrow {
 	position: absolute;
 	top: -21px;
@@ -544,7 +544,7 @@ ul#output li a:hover {
 
 .portfolio-list-text h3 {
 	padding-top: 10px;
-	
+
 }
 
 .portfolio-list-text p {
@@ -674,7 +674,7 @@ a.visit-project:hover {
 /* portfolio  detail */
 .portfolio-detail h2 {
     margin-top: 4px;
-	
+
 }
 
 .portfolio-detail p {
@@ -740,7 +740,7 @@ a.visit-project:hover {
 
 .more {
 	font-size: 16px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	color: #00adb3;
 	text-decoration: none;
 	padding-right: 15px;
@@ -878,7 +878,7 @@ left {
 
 .testimonial_position {
 	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	font-style: italic;
 	color: #00adb3;
 	line-height: 14px;
@@ -906,10 +906,10 @@ left {
 }
 
 .on-third-right h5{
-	position:absolute; 
-	top: 165px; 
+	position:absolute;
+	top: 165px;
 	left:5px;;
-	background:#fff; 
+	background:#fff;
 	padding: 7px;
 	padding-left: 12px;
 	padding-right: 12px;
@@ -958,13 +958,13 @@ left {
 
 .team_title {
 	font-size: 40px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	color: #00adb3;
 }
 
 .team_position {
 	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	font-style: italic;
 	color: #00adb3;
 	line-height: 14px;
@@ -972,7 +972,7 @@ left {
 
 .team_email {
 	font-size: 12px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	line-height: 30px;
 }
 
@@ -993,7 +993,7 @@ left {
 /* contact */
 .contact_form {
 	font-size: 20px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	color: #666;
 	float: left;
     width: 578px;
@@ -1056,7 +1056,7 @@ left {
 
 .post_date {
 	font-size: 20px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	color: #00adb3;
 }
 
@@ -1068,7 +1068,7 @@ left {
 
 .post_author {
 	font-size: 12px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	color: #666;
 	padding-left: 25px;
 	background:url(../images/blog/post_author.jpg);
@@ -1078,13 +1078,13 @@ left {
 .about_author h3 {
 	margin: 0px;
 	font-size: 20px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	color: #666;
 }
 
 .post_about_author {
 	font-size: 20px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	color: #666;
 	float: left;
 	padding: 20px;
@@ -1101,7 +1101,7 @@ left {
 	margin-bottom: 10px;
 	margin-left: 104px;
 	font-size: 18px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	color: #666;
 }
 
@@ -1130,7 +1130,7 @@ left {
 .post_tags {
 	margin-left: 20px;
 	font-size: 12px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	color: #666;
 	padding-left: 25px;
 	background:url(../images/blog/post_tags.jpg);
@@ -1150,7 +1150,7 @@ left {
 .post_comments {
 	margin-left: 20px;
 	font-size: 12px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	color: #666;
 	padding-left: 25px;
 	background:url(../images/blog/post_comments.jpg);
@@ -1231,13 +1231,13 @@ left {
 .blog_comments h3 {
 	margin: 0px;
 	font-size: 20px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	color: #999;
 }
 
 .comment_block {
 	font-size: 20px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	color: #666;
 	float: left;
 	padding: 20px;
@@ -1252,7 +1252,7 @@ left {
 	margin-bottom: 10px;
 	margin-left: 104px;
 	font-size: 16px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	color: #666;
 }
 
@@ -1306,7 +1306,7 @@ a.reply:hover {
 
 .comment_here {
 	font-size: 20px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	color: #666;
 	float: left;
     width: 578px;
@@ -1314,11 +1314,11 @@ a.reply:hover {
 	margin-top: 40px;
 	margin-bottom: 30px;
 }
-	
+
 .contactform {
 	margin:0px;
 	margin-top: 20px;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:inherit;
 	font-size:16px;
 	color:#333333;
 	width: auto;
@@ -1332,7 +1332,7 @@ a.reply:hover {
 	height: 160px;
 	font-size: 14px;
 	color: #333333;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	background-color: #eee;
 }
 
@@ -1369,7 +1369,7 @@ a.reply:hover {
 	border: 1px solid #d2d1cf;
 	width: 295px;
 	height: 22px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	font-size: 14px;
 	color: #333333;
 	background-color: #eee;
@@ -1384,11 +1384,11 @@ a.reply:hover {
 	padding-bottom: 20px;
 }
 
-/* footer */ 
+/* footer */
 #footer {
 	width: 940px;
 	float: left;
-} 
+}
 
 #footer h4 {
     padding: 10px;
@@ -1401,7 +1401,7 @@ a.reply:hover {
 
 .footer_link {
 	font-size: 12px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	color: #00f6ff;
 	text-decoration: none;
 }
@@ -1509,7 +1509,7 @@ a.reply:hover {
 /* Bullets */
 ul.bullets {
     list-style: none;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	padding: 0px;
 	margin: 0px;
     line-height: 20px;
@@ -1595,7 +1595,7 @@ ul.star li{
 #headerTwitter {
 	width: 620px;
 	float: left;
-} 
+}
 
 #headerTwitter h4 {
     padding: 10px;
@@ -1673,7 +1673,7 @@ ul.star li{
 }
 
 /* Social tooltips */
-.tipsy { padding: 5px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; position: absolute; z-index: 100000; }
+.tipsy { padding: 5px; font-size: 12px; font-family: inherit; position: absolute; z-index: 100000; }
 .tipsy-inner { padding: 5px 8px 4px 8px; background-color: black; color: white; max-width: 290px; text-align: center; }
 .tipsy-inner { border-radius: 3px; -moz-border-radius:3px; -webkit-border-radius:3px; }
 .tipsy-arrow { position: absolute; background: url('../images/images/tipsy.gif') no-repeat top left; width: 9px; height: 5px; }
@@ -1846,7 +1846,7 @@ ul.price {
 	padding: 0px;
 	margin-bottom: 20px;
 	list-style: none;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: inherit;
 	font-size: 14px;
     color: #666;
 }
@@ -1867,7 +1867,7 @@ ul.price {
 }
 
 #price-table .pack li {
-    height: 30px;   
+    height: 30px;
     padding: 15px 0 0 0;
 	list-style: none;
 }
