@@ -142,12 +142,19 @@
       <script type="text/javascript" charset="utf-8" async defer>
         // how nav to specified product detail
         // http://<domain>/portfolio.html?p=<pcode>
-        document.write("<hx:include src='"+location.search.replace(/^.*?\=/, '')+ ".html"+"'></hx:include>");
+        var p = location.search.replace(/^.*?\=/, '');
+        document.write("<hx:include src='"+p+ ".html"+"'></hx:include>");
       </script>
     </div>
     <div class="hr_line"></div>
     <div id="content-two-third">
-      <div class="portfolio-detail-img"><img src="images/portoflio/detail/portfolio-detail.jpg" alt="Project title" /></div>
+      <div class="portfolio-detail-img">
+        <script type="text/javascript">
+
+        document.write('<img src="images/portoflio/detail/'+p+'-detail.jpg" alt="Project title" />');
+
+        </script>
+      </div>
       <div class="two-third portfolio-detail">
         <p> Is that the way they heave in the marchant service? he roared. Spring, thou sheep-head; spring, and break thy backbone! Why don't ye spring, I say, all of ye&amp;mdash;spring! Quohog! spring, thou chap with the red <a href="#">whiskers</a>; spring there, Scotch-cap; spring, thou green pants. Spring, I say, all of ye, and spring your eyes out! And so saying, he moved along the windlass, here and there using his leg very freely, while imperturbable Bildad kept leading off with his psalmody.</p>
       </div>
