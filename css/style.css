@@ -669,6 +669,7 @@ a.visit-project:hover {
 .portfolio-grid-text p {
 	padding-bottom: 0px;
 	margin-bottom: 0px;
+    height: 80px;
 }
 
 /* portfolio  detail */
