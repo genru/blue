@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>大吉机械 | 压筋机</title>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+<script type='text/javascript' src='Scripts/jquery-1.3.2.min.js'></script>
+
+<!-- Tooltip -->
+<script type="text/javascript" src="Scripts/jquery.tipsy.js"></script>
+
+<!-- fade in/fade out -->
+<script type="text/javascript" src="Scripts/jquery.innerfade.js"></script>
+
+<!-- fancy box -->
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+</head>
+
+<body>
+
+<script type='text/javascript'>
+  $(function() {
+
+   function mainmenu(){
+        $(" #nav ul ").css({display: "none"}); // Opera Fix
+        $(" #nav li").hover(function(){
+        $(this).find('ul:first').css({visibility: "visible",display: "none"}).show(200);
+        },function(){
+        $(this).find('ul:first').css({visibility: "hidden"});
+    });
+    }
+
+    $(document).ready(function(){
+        mainmenu();
+    });
+
+    $('#example-1').tipsy();
+
+    $('#north').tipsy({gravity: 'n'});
+    $('#south').tipsy({gravity: 's'});
+    $('#east').tipsy({gravity: 'e'});
+    $('#west').tipsy({gravity: 'w'});
+
+    $('.social_icons').tipsy({gravity: 's'});
+
+    $('#auto-gravity').tipsy({gravity: $.fn.tipsy.autoNS});
+
+    $('#example-fade').tipsy({fade: true});
+
+    $('#example-custom-attribute').tipsy({title: 'id'});
+    $('#example-callback').tipsy({title: function() { return this.getAttribute('original-title').toUpperCase(); } });
+    $('#example-fallback').tipsy({fallback: "Where's my tooltip yo'?" });
+
+    $('#example-html').tipsy({html: true });
+
+    /* This is basic - uses default settings */
+
+    $("a.image").fancybox();
+
+    /* Using custom settings */
+
+    $("a#inline").fancybox({
+            'hideOnContentClick': true
+    });
+
+    /* Apply fancybox to multiple items */
+
+    $("a.group").fancybox({
+        'transitionIn'  :   'elastic',
+        'transitionOut' :   'elastic',
+        'speedIn'       :   600,
+        'speedOut'      :   200,
+        'overlayShow'   :   false
+    });
+
+    $(".youtube").click(function() {
+    $.fancybox({
+            'padding'       : 0,
+            'autoScale'     : false,
+            'transitionIn'  : 'none',
+            'transitionOut' : 'none',
+            'title'         : this.title,
+            'width'     : 680,
+            'height'        : 495,
+            'href'          : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+            'type'          : 'swf',
+            'swf'           : {
+                 'wmode'        : 'transparent',
+                'allowfullscreen'   : 'true'
+            }
+        });
+
+            return false;
+
+        });
+
+            $(".vimeo").click(function(){
+            $.fancybox({
+                    'padding':0,
+                    'autoScale':false,
+                    'transitionIn':'none',
+                    'transitionOut':'none',
+                    'title':this.title,
+                    'width':600,
+                    'height':398,
+                    'href':this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),'type':'swf'
+                    });
+            return false;
+        });
+
+    });
+
+</script>
+<div id="wrapper">
+  <div id="top">
+    <div id="logo"><a href="index.html"><img src="images/images/logo.png" alt="大吉机械" /></a></div>
+  </div>
+  <div>
+    <ul id="nav">
+      <li><a href="index.html">公司简介</a> </li>
+      <li><a href="portfolio-grid.html">产品信息</a></li>
+      <li><a href="clients.html">主要客户</a></li>
+      <li><a href="testimonials.html">顾客美誉</a></li>
+      <li><a href="contact.html">联系方式</a></li>
+    </ul>
+  </div>
+  <div id="contentWrap">
+    <div id="breadcrumb">
+      <h4><span class="breadcrumb_link"><a href="index.html">Home</a></span> / <span class="breadcrumb_link"><a href="Portfolio-grid.html">产品</a></span> / <span class="breadcrumb_link"><a href="#">压筋机</a></span></h4>
+    </div>
+    <!-- end breadctum -->
+    <div class="hr_line"></div>
+    <div class="intro">
+      <script type="text/javascript" charset="utf-8" async defer>
+        // how nav to specified product detail
+        // http://<domain>/portfolio.html?p=<pcode>
+        var p = location.search.replace(/^.*?\=/, '');
+        // document.write("<hx:include src='"+p+ ".html"+"'></hx:include>");
+      </script>
+      <h2>压筋机</h2>
+      <p>该设备是一种薄板专用的校平并可压筋的机械设备，是钣金及通风管道风管加工的必备设备之一。该设备除具备卷板校平基本性能外，还可对板材压出五条加强筋，以起到板材强度增加的效果，并可以根据客户的需要配备有专用上料架和上料台，极大的保证了上料平稳均匀性，使卷板校平效果更佳</p>
+    </div>
+    <div class="hr_line"></div>
+
+    <div id="content-two-third">
+      <div class="portfolio-detail-img">
+        <img src="images/portoflio/detail/p13-detail.jpg" alt="压筋机" />
+      </div>
+      <div class="two-third portfolio-detail">
+        <p>
+<table style='width:100%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=118 style='width:88.8pt;border:solid windowtext 1.0pt;background:
+  #99CCFF;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt;font-family:黑体'>型号</span></p>
+  </td>
+  <td width=118 style='width:88.8pt;border:solid windowtext 1.0pt;border-left:
+  none;background:#99CCFF;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt;font-family:黑体'>加工板厚度</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:12.0pt'>(mm)</span></p>
+  </td>
+  <td width=118 style='width:88.8pt;border:solid windowtext 1.0pt;border-left:
+  none;background:#99CCFF;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt;font-family:黑体'>加工板宽度</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:12.0pt'>(mm)</span></p>
+  </td>
+  <td width=96 style='width:72.0pt;border:solid windowtext 1.0pt;border-left:
+  none;background:#99CCFF;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt;font-family:黑体'>功率</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:12.0pt'>(kw)</span></p>
+  </td>
+  <td width=141 style='width:105.6pt;border:solid windowtext 1.0pt;border-left:
+  none;background:#99CCFF;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt;font-family:黑体'>重量</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:12.0pt'>(kg)</span></p>
+  </td>
+  <td width=135 style='width:101.4pt;border:solid windowtext 1.0pt;border-left:
+  none;background:#99CCFF;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:12.0pt;font-family:黑体'>外形尺寸</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:12.0pt'>L×W×H</span></p>
+  </td>
+ </tr>
+ <tr style='height:24.05pt'>
+  <td width=118 style='width:88.8pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:24.05pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:12.0pt'>JXP-1300</span></b></p>
+  </td>
+  <td width=118 style='width:88.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:24.05pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:12.0pt'>0.5-1.2</span></b></p>
+  </td>
+  <td width=118 style='width:88.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:24.05pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:12.0pt'>1300</span></b></p>
+  </td>
+  <td width=96 style='width:72.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:24.05pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:12.0pt'>2.2</span></b></p>
+  </td>
+  <td width=141 style='width:105.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:24.05pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:12.0pt'>1300</span></b></p>
+  </td>
+  <td width=135 style='width:101.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:24.05pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:12.0pt'>1540×1270×1100</span></b></p>
+  </td>
+ </tr>
+</table>
+        </p>
+      </div>
+    </div>
+
+    <div id="column" class="right">
+
+      <div class="blog_widget">
+        <h4>快速导航</h4>
+        <div>
+          <ul class="sidenav">
+            <li><a href="portfolio-grid.html">产品列表</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="blog_widget">
+        <h4>立即致电了解详情</h4>
+        <div class="">
+          <h2> <a href="tel:15655591660">15655591660</a></h2>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div id="footer">
+    <h4>Daji © 2013 All rights reserved. </h4>
+  </div>
+</div>
+
+<div class="bottom">
+</div>
+
+</body>
+</html>
