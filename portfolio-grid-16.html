@@ -4,12 +4,12 @@
 <head>
 
 <meta charset="utf-8">
-<title>大吉机械 | 角铁卷圆机</title>
+<title>大吉机械 | 产品目录 ｜ 折边机系列</title>
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
 <link href="css/main.css" rel="stylesheet" type="text/css"/>
 <link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 
-<script type='text/javascript' src='Scripts/jquery-1.3.2.min.js'></script>
+<script type="text/javascript" src="Scripts/jquery.min.js"></script>
 
 <!-- Tooltip -->
 <script type="text/javascript" src="Scripts/jquery.tipsy.js"></script>
@@ -21,14 +21,15 @@
 <script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 <script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 <script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
 </head>
 
 <body>
 
 <script type='text/javascript'>
-  $(function() {
+  $(document).ready(function() {
 
-   function mainmenu(){
+    function mainmenu(){
         $(" #nav ul ").css({display: "none"}); // Opera Fix
         $(" #nav li").hover(function(){
         $(this).find('ul:first').css({visibility: "visible",display: "none"}).show(200);
@@ -62,7 +63,7 @@
 
     /* This is basic - uses default settings */
 
-    $("a.image").fancybox();
+    $("a.project-list-thumb").fancybox();
 
     /* Using custom settings */
 
@@ -97,27 +98,28 @@
             }
         });
 
-            return false;
+    return false;
 
-        });
+});
 
-            $(".vimeo").click(function(){
-            $.fancybox({
-                    'padding':0,
-                    'autoScale':false,
-                    'transitionIn':'none',
-                    'transitionOut':'none',
-                    'title':this.title,
-                    'width':600,
-                    'height':398,
-                    'href':this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),'type':'swf'
-                    });
-            return false;
-        });
+    $(".vimeo").click(function(){
+    $.fancybox({
+            'padding':0,
+            'autoScale':false,
+            'transitionIn':'none',
+            'transitionOut':'none',
+            'title':this.title,
+            'width':600,
+            'height':398,
+            'href':this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),'type':'swf'
+            });
+    return false;
+});
 
-    });
+});
 
 </script>
+
 <div id="wrapper">
   <div id="top">
     <div id="logo"><a href="index.html"><img src="images/images/logo.png" alt="大吉机械" /></a></div>
@@ -152,56 +154,68 @@
     </ul>
   </div>
   <div id="contentWrap">
-    <div id="breadcrumb">
-      <h4><span class="breadcrumb_link"><a href="index.html">Home</a></span> / <span class="breadcrumb_link"><a href="Portfolio-grid.html">产品</a></span> / <span class="breadcrumb_link"><a href="#">角铁卷圆机</a></span></h4>
+  <div id="breadcrumb">
+      <h4><span class="breadcrumb_link"><a href="index.html">Home</a></span> / <span class="breadcrumb_link"><a href="index.html">产品</a></span> / <span class="breadcrumb_link">折边机系列</span></h4>
     </div>
     <!-- end breadctum -->
     <div class="hr_line"></div>
     <div class="intro">
-      <script type="text/javascript" charset="utf-8" async defer>
-        // how nav to specified product detail
-        // http://<domain>/portfolio.html?p=<pcode>
-        var p = location.search.replace(/^.*?\=/, '');
-        // document.write("<hx:include src='"+p+ ".html"+"'></hx:include>");
-      </script>
-      <h2>角铁卷圆机</h2>
-      <p>机械式角铁卷圆机。可根据不同需要更换轧辊，可卷角铁，扁铁，圆管，槽钢，方通等。轧辊间隙可调，节省材料。</p>
+      <h2>折边机系列</h2>
+      <p>剪板机，折弯机，风管加工设备等系列设备.</p>
     </div>
     <div class="hr_line"></div>
+    <div id="content-full">
+      <div class="portfolio-grid-full-page">
+        <div class="portfolio-grid">
+            <div class="portfolio-grid-image"><a href="portfolio-detail-16-2.html"><img src="images/portoflio/grid/portfolio-grid-16-01.jpg" alt="共板法兰折边机" /></a></div>
+            <div class="hr"></div>
+          <div class="portfolio-grid-text">
+            <h3><a href="portfolio-detail-16-2.html">共板法兰折边机</a></h3>
+            <p>本机可直接对已做好法兰的板材进行折弯加工，实现板材的三折，是共板法兰风管加工过程中实用必备的设备，同时又可做为通用折边机使用...</p>
+            </div>
+        </div>
 
-    <div id="content-two-third">
-      <div class="portfolio-detail-img">
-        <img src="images/portoflio/detail/p9-detail.jpg" alt="角铁卷圆机" />
-      </div>
-      <div class="two-third portfolio-detail">
-        <p>
-        <img src="images/portoflio/detail/p9-1.jpg" alt="角铁卷圆机" />
-        </p>
+        <div class="portfolio-grid">
+            <div class="portfolio-grid-image"><a href="portfolio-detail-16-3.html"><img src="images/portoflio/grid/portfolio-grid-16-02.jpg" alt="普通手动折边机" /></a></div>
+            <div class="hr"></div>
+          <div class="portfolio-grid-text">
+            <h3><a href="portfolio-detail-16-3.html">普通手动折边机</a></h3>
+            <p>手动折边机是在多年生产和使用的基础上研制的，它品种规格多样，集各类机型的优点于一身，其最大的优点在于它活动时可调上模或可调下模，可调按面板刀具，...</p>
+            </div>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-grid-image"><a href="portfolio-detail-16-4.html"><img src="images/portoflio/grid/portfolio-grid-16-03.jpg" alt="气动折边机" /></a></div>
+            <div class="hr"></div>
+          <div class="portfolio-grid-text">
+            <h3><a href="portfolio-detail-16-4.html">气动折边机</a></h3>
+            <p>这本机械采用全钢焊接结构，利用气动作为动力源，按规格广泛用于3米以下，厚度为0.3-2毫米的钢板进行折弯加工以达到成型的目的。本机床轻松快捷...</p>
+            </div>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-grid-image"><a href="portfolio-detail-16-2.html"><img src="images/portoflio/grid/portfolio-grid-16-04.jpg" alt="重型手动折边机" /></a></div>
+            <div class="hr"></div>
+          <div class="portfolio-grid-text">
+            <h3><a href="portfolio-detail-16-2.html">重型手动折边机</a></h3>
+            <p>重型手动折边机是手动普通折边机的加强型产品，可根据客户要求定制，折弯较厚的板材...</p>
+            </div>
+        </div>
+
+<!--         <div class="portfolio-grid">
+            <div class="portfolio-grid-image"><a href="portfolio-detail-5.html"><img src="images/portoflio/grid/portfolio-grid-02.jpg" alt="Project title" /></a></div>
+            <div class="hr"></div>
+          <div class="portfolio-grid-text">
+            <h3><a href="#">Project title</a></h3>
+            <p> Sir Francis watched the procession with a sad countenance, and, turning to the guide, said, &quot;A suttee.&quot; The Parsee nodded, and put his finger to his lips. </p>
+            </div>
+        </div>
+ -->
       </div>
     </div>
-
-    <div id="column" class="right">
-
-      <div class="blog_widget">
-        <h4>快速导航</h4>
-        <div>
-          <ul class="sidenav">
-            <li><a href="portfolio-grid.html">产品列表</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="blog_widget">
-        <h4>立即致电了解详情</h4>
-        <div class="">
-          <h2> <a href="tel:15655591660">15655591660</a></h2>
-        </div>
-      </div>
-    </div>
-
   </div>
   <div id="footer">
-    <h4>Daji © 2013 All rights reserved. </h4>
+    <h4>Daji Machine Ltd. © 2013 All rights reserved. Powered by: <span class="link"><a href="http://themeforest.net/user/agurghis?ref=agurghis" class="footer_link">Alex Gurghis</a></span></h4>
   </div>
 </div>
 
