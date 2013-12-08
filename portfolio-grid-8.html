@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>大吉机械 | 产品目录</title>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="Scripts/jquery.min.js"></script>
+
+<!-- Tooltip -->
+<script type="text/javascript" src="Scripts/jquery.tipsy.js"></script>
+
+<!-- fade in/fade out -->
+<script type="text/javascript" src="Scripts/jquery.innerfade.js"></script>
+
+<!-- fancy box -->
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+</head>
+
+<body>
+
+<script type='text/javascript'>
+  $(document).ready(function() {
+
+    function mainmenu(){
+        $(" #nav ul ").css({display: "none"}); // Opera Fix
+        $(" #nav li").hover(function(){
+        $(this).find('ul:first').css({visibility: "visible",display: "none"}).show(200);
+        },function(){
+        $(this).find('ul:first').css({visibility: "hidden"});
+    });
+    }
+
+    $(document).ready(function(){
+        mainmenu();
+    });
+
+    $('#example-1').tipsy();
+
+    $('#north').tipsy({gravity: 'n'});
+    $('#south').tipsy({gravity: 's'});
+    $('#east').tipsy({gravity: 'e'});
+    $('#west').tipsy({gravity: 'w'});
+
+    $('.social_icons').tipsy({gravity: 's'});
+
+    $('#auto-gravity').tipsy({gravity: $.fn.tipsy.autoNS});
+
+    $('#example-fade').tipsy({fade: true});
+
+    $('#example-custom-attribute').tipsy({title: 'id'});
+    $('#example-callback').tipsy({title: function() { return this.getAttribute('original-title').toUpperCase(); } });
+    $('#example-fallback').tipsy({fallback: "Where's my tooltip yo'?" });
+
+    $('#example-html').tipsy({html: true });
+
+    /* This is basic - uses default settings */
+
+    $("a.project-list-thumb").fancybox();
+
+    /* Using custom settings */
+
+    $("a#inline").fancybox({
+            'hideOnContentClick': true
+    });
+
+    /* Apply fancybox to multiple items */
+
+    $("a.group").fancybox({
+        'transitionIn'  :   'elastic',
+        'transitionOut' :   'elastic',
+        'speedIn'       :   600,
+        'speedOut'      :   200,
+        'overlayShow'   :   false
+    });
+
+    $(".youtube").click(function() {
+    $.fancybox({
+            'padding'       : 0,
+            'autoScale'     : false,
+            'transitionIn'  : 'none',
+            'transitionOut' : 'none',
+            'title'         : this.title,
+            'width'     : 680,
+            'height'        : 495,
+            'href'          : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+            'type'          : 'swf',
+            'swf'           : {
+                 'wmode'        : 'transparent',
+                'allowfullscreen'   : 'true'
+            }
+        });
+
+    return false;
+
+});
+
+    $(".vimeo").click(function(){
+    $.fancybox({
+            'padding':0,
+            'autoScale':false,
+            'transitionIn':'none',
+            'transitionOut':'none',
+            'title':this.title,
+            'width':600,
+            'height':398,
+            'href':this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),'type':'swf'
+            });
+    return false;
+});
+
+});
+
+</script>
+
+<div id="wrapper">
+  <div id="top">
+    <div id="logo"><a href="index.html"><img src="images/images/logo.png" alt="Full moon" /></a></div>
+  </div>
+  <div>
+    <ul id="nav">
+      <li><a href="index.html">公司简介</a> </li>
+      <li><a href="#">产品信息</a>      </li>
+      <li><a href="clients.html">主要客户</a></li>
+      <li><a href="testimonials.html">顾客美誉</a></li>
+      <li><a href="contact.html">联系方式</a></li>
+    </ul>
+  </div>
+  <div id="contentWrap">
+  <div id="breadcrumb">
+      <h4><span class="breadcrumb_link"><a href="index.html">Home</a></span> / <span class="breadcrumb_link"><a href="index.html">产品</a></span> / <span class="breadcrumb_link">剪板机系列</span></h4>
+    </div>
+    <!-- end breadctum -->
+    <div class="hr_line"></div>
+    <div class="intro">
+      <h2>剪板机系列</h2>
+      <p>剪板机，折弯机，风管加工设备等系列设备.</p>
+    </div>
+    <div class="hr_line"></div>
+    <div id="content-full">
+      <div class="portfolio-grid-full-page">
+        <div class="portfolio-grid">
+            <div class="portfolio-grid-image"><a href="portfolio-detail-8.html"><img src="images/portoflio/grid/portfolio-grid-08-01.jpg" alt="QC12Y系列液压板料" /></a></div>
+            <div class="hr"></div>
+          <div class="portfolio-grid-text">
+            <h3><a href="portfolio-detail-6.html?p=p1">QC12Y系列液压板料</a></h3>
+            <p>1． 全钢焊接机架，具有足够的强度和刚性；
+2．  液压压料装置，可靠的安全栅；
+3．  刃口间隙快速调整装置，刀架行程可调，剪切窄料时可提高生产效率；
+...</p>
+            </div>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-grid-image"><a href="portfolio-detail-8.html"><img src="images/portoflio/grid/portfolio-grid-08-02.jpg" alt="脚踏剪板机" /></a></div>
+            <div class="hr"></div>
+          <div class="portfolio-grid-text">
+            <h3><a href="portfolio-detail-8.html">脚踏剪板机</a></h3>
+            <p>本剪板机外形美观，结构新颖，采用滑动导轨，踏拉簧采用滑动支点固定式，使其操作力减少三分之二，该剪板机可配有压料装置，剪切质量高，并有重量轻...</p>
+            </div>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-grid-image"><a href="portfolio-detail-8.html"><img src="images/portoflio/grid/portfolio-grid-08-03.jpg" alt="节能电动剪板机" /></a></div>
+            <div class="hr"></div>
+          <div class="portfolio-grid-text">
+            <h3><a href="portfolio-detail-8.html">节能电动剪板机</a></h3>
+            <p>本机械采用全钢焊接结构，闸式下传动原理，电机与摆线针轮减速机一体化，自带刹车装置，链条传动，不剪切不耗电，结构简便，能耗低，适用于0.1-4毫米钢...</p>
+            </div>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-grid-image"><a href="portfolio-detail-8.html"><img src="images/portoflio/grid/portfolio-grid-08-04.jpg" alt="小型电动齿轮型剪板机" /></a></div>
+            <div class="hr"></div>
+          <div class="portfolio-grid-text">
+            <h3><a href="portfolio-detail-8.html">小型电动齿轮型剪板机</a></h3>
+            <p>本机械采用全钢焊接结构，结构简单，操作简便，造型美观，能耗低，采用齿轮传动或减速机传动，可安装电磁铁，接脚踏开关后可远程控制，适用于冶金、轻工、机械、五金等...</p>
+            </div>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-grid-image"><a href="portfolio-detail-8.html"><img src="images/portoflio/grid/portfolio-grid-08-05.jpg" alt="小型电动减速涡轮型剪板机" /></a></div>
+            <div class="hr"></div>
+          <div class="portfolio-grid-text">
+            <h3><a href="portfolio-detail-8.html">小型电动减速涡轮型剪板机</a></h3>
+            <p>本机床为改进后的小型电动剪板机，采用电机与涡轮减速机直连式结构，与转轴直接相连，省去齿轮结构降低安全隐患，传动效率更高，因无转键打手，使维修率大大下降，且配...</p>
+            </div>
+        </div>
+
+
+<!--         <div class="portfolio-grid">
+            <div class="portfolio-grid-image"><a href="portfolio-detail-5.html"><img src="images/portoflio/grid/portfolio-grid-02.jpg" alt="Project title" /></a></div>
+            <div class="hr"></div>
+          <div class="portfolio-grid-text">
+            <h3><a href="#">Project title</a></h3>
+            <p> Sir Francis watched the procession with a sad countenance, and, turning to the guide, said, &quot;A suttee.&quot; The Parsee nodded, and put his finger to his lips. </p>
+            </div>
+        </div>
+ -->
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <h4>Daji Machine Ltd. © 2013 All rights reserved. Powered by: <span class="link"><a href="http://themeforest.net/user/agurghis?ref=agurghis" class="footer_link">Alex Gurghis</a></span></h4>
+  </div>
+</div>
+
+<div class="bottom">
+</div>
+
+</body>
+</html>
