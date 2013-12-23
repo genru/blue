@@ -1,10 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>Full Moon Template</title>    
+<meta charset="utf-8">
+<title>大吉机械</title>
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
 <link href="css/main.css" rel="stylesheet" type="text/css"/>
 
@@ -22,7 +22,7 @@
 
 <script type='text/javascript'>
   $(function() {
-    
+
 	function mainmenu(){
 		$(" #nav ul ").css({display: "none"}); // Opera Fix
 		$(" #nav li").hover(function(){
@@ -35,101 +35,71 @@
  	$(document).ready(function(){
 		mainmenu();
 	});
-	
+
     $('#example-1').tipsy();
-    
+
     $('#north').tipsy({gravity: 'n'});
     $('#south').tipsy({gravity: 's'});
     $('#east').tipsy({gravity: 'e'});
     $('#west').tipsy({gravity: 'w'});
-	
+
 	$('.social_icons').tipsy({gravity: 's'});
-    
+
     $('#auto-gravity').tipsy({gravity: $.fn.tipsy.autoNS});
-    
+
     $('#example-fade').tipsy({fade: true});
-    
+
     $('#example-custom-attribute').tipsy({title: 'id'});
     $('#example-callback').tipsy({title: function() { return this.getAttribute('original-title').toUpperCase(); } });
     $('#example-fallback').tipsy({fallback: "Where's my tooltip yo'?" });
-    
+
     $('#example-html').tipsy({html: true });
 
 	});
- 
+
 </script>
 
 <div id="wrapper">
   <div id="top">
-     <div id="logo"><a href="index.html"><img src="images/images/logo.png" alt="Full moon" /></a></div>
+    <div id="logo"><a href="index.html"><img src="images/images/logo.png" alt="大吉机械" /></a>    <div style="float:right; width:400px;" >
+      <h2>销售热线 <span class="tel">15655591660</span></h2>
+    </div>
   </div>
   <div>
     <ul id="nav">
-     <li><a href="index.html">Home</a>
+      <li><a href="index.html">公司简介</a> </li>
+      <li><a href="portfolio-grid.html">产品信息</a>
         <ul>
-          <li><a href="index.html">Index width header</a></li>
-          <li><a href="index_image.html">Index image header</a></li>
-          <li><a href="index-featured-list.html">Index featured list</a></li>
-          <li><a href="index_no_header.html">Index with no header</a></li>
+          <li><a href="portfolio-grid-7.html">共板法兰机系列</a></li>
+          <li><a href="portfolio-detail-6.html">风管生产II  III IV线</a></li>
+          <li><a href="portfolio-grid-8.html">剪板机系列</a></li>
+          <li><a href="portfolio-grid-14.html">咬口机-辘骨机</a></li>
+          <li><a href="portfolio-grid-16.html">折边机系列</a></li>
+          <li><a href="portfolio-grid-13.html">压筋机</a></li>
+          <li><a href="portfolio-detail-11.html">数控等离子切割机</a></li>
+          <li><a href="portfolio-detail-1.html">冲床角码模具</a></li>
+          <li><a href="portfolio-detail-2.html">电动手动卷料架</a></li>
+          <li><a href="portfolio-detail-3.html">电动手动辘线机</a></li>
+          <li><a href="portfolio-detail-4.html">电动手动偏三星卷板机</a></li>
+          <li><a href="portfolio-detail-5.html">电动液压铆钉机</a></li>
+          <li><a href="portfolio-detail-9.html">角铁卷圆机</a></li>
+          <li><a href="portfolio-detail-10.html">辘剪压筋机牛头剪</a></li>
+          <li><a href="portfolio-detail-12.html">虾米弯头机</a></li>
+          <li><a href="portfolio-grid-15.html">液压-脚踏剪角机</a></li>
         </ul>
+
       </li>
-      <li><a href="#">About</a>
-        <ul>
-          <li><a href="about-full.html">Full-width page</a></li>
-          <li><a href="about-two-third.html">Two-third page</a></li>
-          <li><a href="team.html">Team</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Portfolio</a>
-        <ul>
-          <li><a href="portfolio-grid.html">Portfolio - grid</a></li>
-          <li><a href="portfolio-grid-two-third.html">Portfolio - two-third</a></li>
-          <li><a href="portfolio-list.html">Portfolio - list</a></li>
-          <li><a href="portfolio-detail.html">Portfolio detail</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Gallery</a>
-        <ul>
-          <li><a href="gallery-full-width.html">Gallery - full-width</a></li>
-          <li><a href="gallery-two-third.html">Gallery - two-third</a></li>
-          <li><a href="gallery-image.html">Image Gallery</a></li>
-          <li><a href="gallery-video.html">Video Gallery</a></li>
-          <li><a href="gallery-mixed.html">Mixed Gallery</a></li>
-        </ul>
-      </li>
-      <li><a href="clients.html">Clients</a></li>
-       <li><a href="#">Blog</a>
-        <ul>
-          <li><a href="blog.html">Blog overview</a></li>
-          <li><a href="blog-detail.html">Blog detail</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Misc</a>
-        <ul>
-          <li><a href="styled-elements.html">Styled elements</a></li>
-          <li><a href="price-table.html">Price table</a></li>
-          <li><a href="404.html">404</a></li>
-        </ul>
-      </li>
-      <li><a href="testimonials.html">Testimonials</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="clients.html">主要客户</a></li>
+      <li><a href="testimonials.html">顾客美誉</a></li>
+      <li><a href="contact.html">联系方式</a></li>
     </ul>
   </div>
   <div id="header"> <a href="index.html"><img src="images/images/404.jpg" alt="Missing page" /></a> </div>
   <div id="contentWrap"></div>
   <div id="footer">
-    <h4>Full Moon © 2010 All rights reserved. Powered by: <span class="link"><a href="http://themeforest.net/user/agurghis?ref=agurghis" class="footer_link">Alex Gurghis</a></span></h4>
+    <h4>Daji Machine Ltd. © 2013 All rights reserved. Powered by: <span class="link"><a href="http://themeforest.net/user/agurghis?ref=agurghis" class="footer_link">Alex Gurghis</a></span></h4>
   </div>
- <div id="social"> <a href="#"><img src="images/social_media_buttons/facebook_alt.png" alt="Facebook" class="social_icons" title="Facebook"/></a><a href="#"><img src="images/social_media_buttons/twitter.png" alt="Twitter" class="social_icons" title="Twitter"/></a><a href="#"><img src="images/social_media_buttons/flickr.png" alt="Flickr" class="social_icons" title="Flickr"/></a><a href="#"><img src="images/social_media_buttons/delicious.png" alt="Delicious" class="social_icons" title="Delicious" /></a><a href="#"><img src="images/social_media_buttons/diigo.png" alt="Diigo" class="social_icons" title="Diigo" /></a><a href="#"><img src="images/social_media_buttons/email.png" alt="Email" class="social_icons" title="Email" /></a><a href="#"><img src="images/social_media_buttons/google.png" alt="Google buzz" class="social_icons" title="Google buzz" /></a><a href="#"><img src="images/social_media_buttons/lastfm.png" alt="Lastfm" class="social_icons" title="Lastfm" /></a><a href="#"><img src="images/social_media_buttons/linkedin.png" alt="Linkedin" class="social_icons" title="Linkedin" /></a><a href="#"><img src="images/social_media_buttons/myspace.png" alt="Myspace" class="social_icons" title="Myspace" /></a><a href="#"><img src="images/social_media_buttons/picasa.png" alt="Picasa" class="social_icons" title="Picasa" /></a><a href="#"><img src="images/social_media_buttons/posterous.png" alt="Posterous" class="social_icons" title="Posterous" /></a><a href="#"><img src="images/social_media_buttons/rss.png" alt="RSS" class="social_icons" title="RSS" /></a><a href="#"><img src="images/social_media_buttons/sharethis.png" alt="sharethis" class="social_icons" title="Share this" /></a><a href="#"><img src="images/social_media_buttons/stumbleupon.png" alt="Stumbleupon" class="social_icons" title="Stumbleupon" /></a><a href="#"><img src="images/social_media_buttons/technorati.png" alt="Technocrati" class="social_icons" title="Technorati" /></a><a href="#"><img src="images/social_media_buttons/youtube.png" alt="Youtube" class="social_icons" title="Youtube" /></a><a href="#"><img src="images/social_media_buttons/skype_alt.png" alt="Skype" class="social_icons" title="Skype" /></a><a href="#"><img src="images/social_media_buttons/dribble_alt.png" alt="Dribble" class="social_icons" title="Dribble" /></a><a href="#"><img src="images/social_media_buttons/vimeoo.png" alt="Vimeo" class="social_icons" title="Vimeo" /></a><a href="#"><img src="images/social_media_buttons/wordpress.png" alt="Blog" class="social_icons" title="Blog" /></a></div>
 </div>
-
-<div class="bottom">
-</div>
-
-<!-- twitter -->
-<script src="Scripts/twitter.js" type="text/javascript"></script>
-<script src="http://www.twitter.com/statuses/user_timeline/agurghis.json?callback=twitterCallback1&amp;count=1" type="text/javascript"></script>
-<script src="http://www.twitter.com/statuses/user_timeline/agurghis.json?callback=twitterCallback2&amp;count=1" type="text/javascript"></script>
 
 </body>
 </html>
