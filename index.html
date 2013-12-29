@@ -5,10 +5,33 @@
 
 <meta charset="utf-8">
 <title>大吉机械</title>
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
 <link href="css/main.css" rel="stylesheet" type="text/css"/>
+<style type="text/css" media="screen">
+  * {
+    -webkit-box-sizing:content-box;
+    -moz-boxing-sizing:content-box;
+    box-sizing:content-box;
+  }
+  .carousel-indicators li {
+    border-color: #ddd
+  }
+  .carousel-indicators .active {
+    background-color: #ddd
+  }
+  .recent_post {
+    width: inherit;
+    height: inherit;
+  }
+</style>
 
-<script type='text/javascript' src='Scripts/jquery-1.3.2.min.js'></script>
+<!-- <script type='text/javascript' src='Scripts/jquery-1.3.2.min.js'></script> -->
+<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+<!-- boostrap -->
+<script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="Scripts/carousel.js"></script>
 
 <!-- Tooltip -->
 <script type="text/javascript" src="Scripts/jquery.tipsy.js"></script>
@@ -23,79 +46,6 @@
 
 <body>
 
-<script type='text/javascript'>
-
-  $(function() {
-
-	function mainmenu(){
-		$(" #nav ul ").css({display: "none"}); // Opera Fix
-		$(" #nav li").hover(function(){
-		$(this).find('ul:first').css({visibility: "visible",display: "none"}).show(200);
-		},function(){
-		$(this).find('ul:first').css({visibility: "hidden"});
-	});
-	}
-
- 	$(document).ready(function(){
-		mainmenu();
-	});
-
-	$.featureList(
-		$("#tabs li a"),
-		$("#output li"), {
-			start_item	:	1
-		}
-	);
-
-
-    $('#example-1').tipsy();
-
-    $('#north').tipsy({gravity: 'n'});
-    $('#south').tipsy({gravity: 's'});
-    $('#east').tipsy({gravity: 'e'});
-    $('#west').tipsy({gravity: 'w'});
-
-	$('.social_icons').tipsy({gravity: 's'});
-
-    $('#auto-gravity').tipsy({gravity: $.fn.tipsy.autoNS});
-
-    $('#example-fade').tipsy({fade: true});
-
-    $('#example-custom-attribute').tipsy({title: 'id'});
-    $('#example-callback').tipsy({title: function() { return this.getAttribute('original-title').toUpperCase(); } });
-    $('#example-fallback').tipsy({fallback: "Where's my tooltip yo'?" });
-
-    $('#example-html').tipsy({html: true });
-
-	// Save  the jQuery objects for later use.
-	var outer	= $("#preview_outer");
-	var arrow	= $("#arrow");
-	var thumbs	= $("#thumbs span");
-
-	var preview_pos;
-	var preview_els	= $("#preview_inner div");
-	var image_width	= preview_els.eq(0).width(); // Get width of imaages
-
-	// Hook up the click event
-	thumbs.click(function() {
-		// Get position of current image
-		preview_pos = preview_els.eq( thumbs.index( this) ).position();
-
-		// Animate them!
-		outer.stop().animate( {'scrollLeft' : preview_pos.left},	500 );
-		arrow.stop().animate( {'left' : $(this).position().left },	500 );
-	});
-
-	// Reset positions on load
-	arrow.css( {'left' : thumbs.eq(0).position().left } ).show();
-	outer.animate( {'scrollLeft' : 0}, 0 );
-
-	// Set initial width
-	$("#preview_inner").css('width', preview_els.length * image_width);
-
-	});
-
-</script>
 
 <div id="wrapper">
   <div id="top">
@@ -136,9 +86,9 @@
   </div>
 
   <div class="hr"></div>
-
+<!--
   <div id="preview_wrap">
-		<div id="preview_outer">
+    <div id="preview_outer">
               <div id="preview_inner">
                     <div>
                         <img src="images/header thumbs/1_b.jpg" alt="风管生产线" />
@@ -186,21 +136,66 @@
                     </div>
 
               </div>
-              </div>
-		</div>
-	<div id="thumbs">
-		<div id="arrow"></div>
-		<span><img src="images/header thumbs/1_s.jpg" alt="风管生产线" /></span>
-		<span><img src="images/header thumbs/2_s.jpg" alt="共板法兰成型机" /></span>
-		<span><img src="images/header thumbs/3_s.jpg" alt="QC12Y系列液压板料" /></span>
-		<span><img src="images/header thumbs/4_s.jpg" alt="全自动数控等离子切割机" /></span>
+          </div>
+    </div>
+  <div id="thumbs">
+    <div id="arrow"></div>
+    <span><img src="images/header thumbs/1_s.jpg" alt="风管生产线" /></span>
+    <span><img src="images/header thumbs/2_s.jpg" alt="共板法兰成型机" /></span>
+    <span><img src="images/header thumbs/3_s.jpg" alt="QC12Y系列液压板料" /></span>
+    <span><img src="images/header thumbs/4_s.jpg" alt="全自动数控等离子切割机" /></span>
     <span><img src="images/header thumbs/5_s.jpg" alt="电动液压铆钉机" /></span>
-		<span><img src="images/header thumbs/6_s.jpg" alt="电动角铁卷圆机" /></span>
-		<span><img src="images/header thumbs/7_s.jpg" alt="辘剪压筋机牛头剪" /></span>
-		<span><img src="images/header thumbs/8_s.jpg" alt="虾米弯头机" /></span>
+    <span><img src="images/header thumbs/6_s.jpg" alt="电动角铁卷圆机" /></span>
+    <span><img src="images/header thumbs/7_s.jpg" alt="辘剪压筋机牛头剪" /></span>
+    <span><img src="images/header thumbs/8_s.jpg" alt="虾米弯头机" /></span>
     <span><img src="images/header thumbs/9_s.jpg" alt="校平压筋机" /></span>
-	</div>
+  </div>
+-->
+<div id="preview_wrap">
 
+  <div id="preview_outer" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#preview_outer" data-slide-to="0" class="active"></li>
+      <li data-target="#preview_outer" data-slide-to="1"></li>
+      <li data-target="#preview_outer" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/header thumbs/1_b.jpg" alt="风管生产线">
+        <div class="carousel-caption">
+          风管生产线
+        </div>
+      </div>
+
+
+      <div class="item">
+        <img src="images/header thumbs/2_b.jpg" alt="共板法兰成型机">
+        <div class="carousel-caption">
+          共板法兰成型机
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/header thumbs/4_b.jpg" alt="全自动数控等离子切割机">
+        <div class="carousel-caption">
+          全自动数控等离子切割机
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#preview_outer" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#preview_outer" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+</div>
   <div id="contentWrap">
     <div class="hr_line"></div>
     <div id="content-two-third">
@@ -212,17 +207,57 @@
       <div class="hr"></div>
       <div class="two-third services"> <img class="icon_left" src="images/icons/monitor.png" alt="icon" />
         <h2>产品保养</h2>
-        <ul class="sidenav">
-          <li><a href="chanpinbaoyang-1.html">xx如何保养</a></li>
-          <li><a href="#">正确使用xxx，延长使用期限，节省生产成本</a></li>
-          <li><a href="#">xx投资回报的分析</a></li>
-          <li><a href="#">xx需要经常xx吗</a></li>
+<!--         <ul class="sidenav">
+          <li><a href="chanpinbaoyang-1.html">折边机需重点注意的操作规程</a></li>
+          <li><a href="chanpinbaoyang-2.html">从力学性能分析咬口机材料选择要素</a></li>
+          <li><a href="chanpinbaoyang-3.html">解析我国咬口机实际操作和使用技术</a></li>
+          <li><a href="chanpinbaoyang-4.html">多功能咬口机的基础参数及特点</a></li>
+          <li><a href="chanpinbaoyang-5.html">把关咬口机质量有助于提升其寿命</a></li>
+          <li><a href="chanpinbaoyang-6.html">关于共板法兰机的五种故障排除法</a></li>
         </ul>
-
+ -->
         <p>
         </p>
+        <div class="recent_post_main">
+          <div class="recent_post">
+            <div>
+              <p><a href="chanpinbaoyang-1.html">折边机需重点注意的操作规程</a>
+                <span class="recent_post_date pull-right">23 december 2012</span></p>
+            </div>
+          </div>
+          <div class="recent_post">
+            <div> 
+              <p><a href="chanpinbaoyang-2.html">从力学性能分析咬口机材料选择要素</a>
+                <span class="recent_post_date pull-right">21 december 2012</span></p>
+            </div>
+          </div>
+          <div class="recent_post">
+            <div> 
+              <p><a href="chanpinbaoyang-3.html">解析我国咬口机实际操作和使用技术</a>
+                <span class="recent_post_date pull-right">19 december 2012</span></p>
+            </div>
+          </div>
+          <div class="recent_post">
+            <div> 
+              <p><a href="chanpinbaoyang-4.html">多功能咬口机的基础参数及特点</a>
+                <span class="recent_post_date pull-right">17 december 2012</span></p>
+            </div>
+          </div>
+          <div class="recent_post">
+            <div> 
+              <p><a href="chanpinbaoyang-5.html">把关咬口机质量有助于提升其寿命</a>
+                <span class="recent_post_date pull-right">15 december 2012</span></p>
+            </div>
+          </div>
+          <div class="recent_post">
+            <div> 
+              <p><a href="chanpinbaoyang-6.html">关于共板法兰机的五种故障排除法</a>
+                <span class="recent_post_date pull-right">15 december 2012</span></p>
+            </div>
+          </div>
+        </div>
 
-        <a href="#" class="more">Read more</a></div>
+        <a href="chanpinbaoyang.html" class="more">Read more</a></div>
       <div class="hr"></div>
     </div>
     <div id="column" class="right">
@@ -249,6 +284,64 @@
 
 <div class="bottom">
 </div>
+
+<script type='text/javascript'>
+
+  $(function() {
+
+  function mainmenu(){
+    $(" #nav ul ").css({display: "none"}); // Opera Fix
+    $(" #nav li").hover(function(){
+    $(this).find('ul:first').css({visibility: "visible",display: "none"}).show(200);
+    },function(){
+    $(this).find('ul:first').css({visibility: "hidden"});
+  });
+  }
+
+  $(document).ready(function(){
+    mainmenu();
+    $('.preview_outer').carousel({
+      interval: 2000
+    })
+  });
+
+  $.featureList(
+    $("#tabs li a"),
+    $("#output li"), {
+      start_item  : 1
+    }
+  );
+
+
+  // Save  the jQuery objects for later use.
+  var outer = $("#preview_outer");
+  var arrow = $("#arrow");
+  var thumbs  = $("#thumbs span");
+
+  var preview_pos;
+  var preview_els = $("#preview_inner div");
+  var image_width = preview_els.eq(0).width(); // Get width of imaages
+
+  // Hook up the click event
+  thumbs.click(function() {
+    // Get position of current image
+    preview_pos = preview_els.eq( thumbs.index( this) ).position();
+
+    // Animate them!
+    outer.stop().animate( {'scrollLeft' : preview_pos.left},  500 );
+    arrow.stop().animate( {'left' : $(this).position().left },  500 );
+  });
+
+  // Reset positions on load
+  arrow.css( {'left' : thumbs.eq(0).position().left } ).show();
+  outer.animate( {'scrollLeft' : 0}, 0 );
+
+  // Set initial width
+  $("#preview_inner").css('width', preview_els.length * image_width);
+
+  });
+
+</script>
 
 </body>
 </html>

@@ -4,7 +4,7 @@
 <head>
 
 <meta charset="utf-8">
-<title>大吉机械</title>
+<title>大吉机械 | 关于共板法兰机的五种故障排除法</title>
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
 <link href="css/main.css" rel="stylesheet" type="text/css"/>
 
@@ -22,7 +22,7 @@
 
 <script type='text/javascript'>
   $(function() {
-
+    
 	function mainmenu(){
 		$(" #nav ul ").css({display: "none"}); // Opera Fix
 		$(" #nav li").hover(function(){
@@ -35,32 +35,32 @@
  	$(document).ready(function(){
 		mainmenu();
 	});
-
+	
     $('#example-1').tipsy();
-
+    
     $('#north').tipsy({gravity: 'n'});
     $('#south').tipsy({gravity: 's'});
     $('#east').tipsy({gravity: 'e'});
     $('#west').tipsy({gravity: 'w'});
-
+	
 	$('.social_icons').tipsy({gravity: 's'});
-
+    
     $('#auto-gravity').tipsy({gravity: $.fn.tipsy.autoNS});
-
+    
     $('#example-fade').tipsy({fade: true});
-
+    
     $('#example-custom-attribute').tipsy({title: 'id'});
     $('#example-callback').tipsy({title: function() { return this.getAttribute('original-title').toUpperCase(); } });
     $('#example-fallback').tipsy({fallback: "Where's my tooltip yo'?" });
-
+    
     $('#example-html').tipsy({html: true });
 
 	});
-
+ 
 </script>
 <div id="wrapper">
   <div id="top">
-    <div id="logo"><a href="index.html"><img src="images/images/logo.png" alt="Full moon" /></a></div>
+    <div id="logo"><a href="index.html"><img src="images/images/logo.png" alt="大吉机械" /></a></div>
   </div>
   <div>
     <ul id="nav">
@@ -94,65 +94,51 @@
   </div>
   <div id="contentWrap">
     <div id="breadcrumb">
-      <h4> <span class="breadcrumb_link"><a href="index.html">Home</a></span> / <span class="breadcrumb_link"><a href="#">Contact</a></span></h4>
+      <h4><span class="breadcrumb_link"><a href="index.html">Home</a></span> / <span class="breadcrumb_link"><a href="#">公司简介</a></span></h4>
     </div>
     <!-- end breadctum -->
     <div class="hr_line"></div>
-    <div class="intro">
-      <h2>联系方式</h2>
-      <p>During the rest of that day there was no other adventure to mar the peace of their journey. Once, indeed, the Tin Woodman stepped upon a beetle that was crawling along the road, and killed the poor little thing. This made the Tin Woodman very unhappy, for he was always careful not to hurt any living creature; and as he walked along he wept several tears of sorrow and regret. These tears ran slowly down his face and over the hinges of his jaw, and there they rusted.</p>
-    </div>
-    <div class="hr_line"></div>
     <div id="content-two-third">
-    <div class="contact-img"><img src="images/images/contact.jpg" alt="Map" /></div>
-    <div class="two-third portfolio-detail">
-        <p> 大吉机械科技有限公司坐落于xxxx，拥有员工xx，年销售额xx的民营企业. 本着xxxxxxxxx的经营理念，坚持以客户需求为中心 以质量为根本，不断生产优秀机械设备，服务国家建设，回报社会。</p>
-    </div>
+      <div class="blog">
+        <h4>关于共板法兰机的五种故障排除法</h4>
+        <span class="post_date">2013-02-27</span> <span class="post_elements"><span class="post_author">admin</span> </span>
+        <img src="http://placehold.it/610x200" alt="First blog post" />
+        <div class="blogpost">
+          <p>
+            从目前风管连接的各种应用中，我们知道共板法兰机是一种应用较为广泛的连接设备。由于很多场合下，风管的使用率都较高，所以经常会出现共板法兰机有故障的情况。下面将为大家介绍几种检修方法，帮助我们快速的找出故障根源。</p>
+            <h5>测量比较法</h5>
+      　　<p>一般，很多生产厂家在设计印刷线路板时，为了调整和维修方便，往往会在印刷线路板上设计一些检测量端子。维修人员通过检测这些测量端子的电压或波形，可检查有关电路的工作状态是否正常。但利用检测端子进行测量之前，应先熟悉这些检测端子的作用及有关部分的电路或逻辑关系。</p>
+          <h5>直观检查法</h5>
+　　      <p>这是维修人员最先使用的方法，在故障诊断时，由外向内一一进行观察检查。尤其要注意观察电路板的元器件及线路是否有烧坏、裂痕等现象、电路板上是否有短路、断路，芯片接触不良等现象，对于已维修过的电路板，更要注意有无缺件、错件及断线等情况。</p>
+          <h5>参数检查法</h5>
+          <p>在发生故障时应及时核对系统参数，参数一般存放在磁泡存储器或存放在需由电池保持的CMOS RAM中，一旦电池不足或由于外界的干扰等因素，使个别参数丢失或变化，发生混乱，使机床无法正常工作。此时，可通过核对、修正参数，将故障排除。</p>
+          <h5>试探交换法</h5>
+          <p>在分析出故障大致起因的情况下，维修人员可以利用备用的印刷电路板、集成电路芯片或元器件替换有疑点的部分，从而把故障范围缩小到印刷线路板或芯片一级。采用此法之前要注意备用板的设定状态与原板的状态是否完全一致，这包括检查板上的选择开关、短路棒的设定位置以及电位器的位置。</p>
+          <h5>功能程序测试法</h5>
+          <p>功能程序测试法是将数控系统的G、M、S、T、F功能用编程法编成一个功能试验程序，并存储在相应的介质上，如纸带和磁带等。在故障诊断时运行这个程序，可快速判定故障发生的可能起因。</p>
 
-    <div class="contact_form">
 
-            <form action="mailer.php" method="post" class="contactform" />
-
-              <input type="text" onfocus="if(this.value=='Name')this.value='';" onblur="if(this.value=='')this.value='Name';" name="name" class="input-textarea"  value="您的称呼" id="bname" />
-
-              <br />
-              <br />
-
-              <input type="text" onfocus="if(this.value=='Email')this.value='';" onblur="if(this.value=='')this.value='Email';" name="email" class="input-textarea" value="您的电邮地址" id="bemail" />
-
-              <br />
-              <br />
-
-              <textarea name="message" cols="8" rows="5"></textarea>
-
-              <br />
-
-              <input name="Submit" type="submit" value="Submit" class="input-submit"/>
-
+        </p>
+        </div>
       </div>
-
-    </div>
-
+   	</div>
     <div id="column" class="right">
+      
       <div class="blog_widget">
-        <h4>Sidebar menu</h4>
+        <h4>联系方式</h4>
         <div>
-            <ul class="sidenav">
-              <li><a href="#">Our Mission</a></li>
-              <li><a href="#">Our Philosophy</a></li>
-              <li><a href="#">Our Services</a></li>
-              <li><a href="#">Our Vision</a></li>
-            </ul>
+          <ul class="bullets blue">
+            <li>厂址：马鞍山市博望镇工业园</li>
+            <li>电话：0555-6061300</li>
+            <li>传真：0555-6061322</li>
+            <li>手机：15655591660</li>
+            <li>bob&#64;gmail.com</li>
+          </ul>
         </div>
       </div>
-
-      <div class="blog_widget">
-        <h4>What clients said</h4>
-        <div class="blockquote">
-          <p> The old man looked at him and silently began to cry.   The weak tears of age rolled down his cheeks and all the feebleness of his eighty-seven years showed in his grief-stricken countenance. <cite>– Jack London</cite></p>
-        </div>
-      </div>
+            
     </div>
+    
   </div>
   <div id="footer">
     <h4>Daji Machine Ltd. © 2013 All rights reserved. Powered by: <span class="link"><a href="http://themeforest.net/user/agurghis?ref=agurghis" class="footer_link">Alex Gurghis</a></span></h4>
