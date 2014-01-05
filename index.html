@@ -290,7 +290,57 @@
       <div class="on-third-right">
         <h4>特别推荐</h4>
         <h5>QC12Y系列液压板料</h5>
-        <a href="#"><img src="images/portoflio/1.jpg" class="portfolio" alt="featured"/></a>
+        <!-- <a href="#"><img src="images/portoflio/1.jpg" class="portfolio" alt="featured"/></a> -->
+    <div id="thumb-pic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#thumb-pic" data-slide-to="0" class="active"></li>
+      <li data-target="#thumb-pic" data-slide-to="1"></li>
+      <li data-target="#thumb-pic" data-slide-to="2"></li>
+      <li data-target="#thumb-pic" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/portoflio/1.jpg" class="portfolio" alt="featured"/>
+        <div class="carousel-caption">
+          风管生产线
+        </div>
+      </div>
+
+
+      <div class="item">
+        <img src="images/portoflio/2.jpg" class="portfolio" alt="featured"/>
+        <div class="carousel-caption">
+          共板法兰成型机
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/portoflio/3.jpg" class="portfolio" alt="featured"/>
+        <div class="carousel-caption">
+          全自动数控等离子切割机
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/portoflio/4.jpg" class="portfolio" alt="featured"/>
+        <div class="carousel-caption">
+          全自动数控等离子切割机
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#thumb-pic" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#thumb-pic" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
       </div>
 
       <div class="blog_widget">
@@ -357,6 +407,9 @@
   $(document).ready(function(){
     mainmenu();
     $('.preview_outer').carousel({
+      interval: 2000
+    })
+    $('.thumb-pic').carousel({
       interval: 2000
     })
   });
