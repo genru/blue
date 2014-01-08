@@ -1,5 +1,5 @@
 <?PHP
-$to = "hshinina@163.com";
+$to = "daji@dajijixie.com";
 $subject = "Messsage from website";
 $headers = "Name: Form Mailer";
 $forward = 1;
