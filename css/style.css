@@ -842,6 +842,51 @@ left {
 	color: #666;
 }
 
+/* filter */
+#filters {
+    font-size: 12px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda,sans-serif, Arial, Helvetica, Garuda, sans-serif;
+    padding: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+#filters li {
+    list-style: none;
+    float: left;
+}
+
+
+#filters a {
+    display: block;
+    margin-left: 10px;
+    float: left;
+    background-color: #ececec;
+    padding: 10px;
+    text-align: center;
+    color: #252525;
+    border: 1px solid #d1d1d1;
+    text-decoration: none;
+}
+
+
+#filters li.current a,
+#filters a:hover {
+    background-color: #484848;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #393939;
+}
+
+
+#filters span.pages {
+    float: left;
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    color: #666;
+}
 
 /* clients */
 .clients img {
