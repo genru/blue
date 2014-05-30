@@ -90,3 +90,8 @@ p a:hover {
 a img {
 	border: 0px;
 }
+
+.tel {
+    color: red;
+    font-size: larger;
+}
