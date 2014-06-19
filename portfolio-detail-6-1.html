@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>大吉机械 | 风管生产IV线</title>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+<script type='text/javascript' src='Scripts/jquery-1.3.2.min.js'></script>
+
+<!-- Tooltip -->
+<script type="text/javascript" src="Scripts/jquery.tipsy.js"></script>
+
+<!-- fade in/fade out -->
+<script type="text/javascript" src="Scripts/jquery.innerfade.js"></script>
+
+<!-- fancy box -->
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+</head>
+
+<body>
+
+<script type='text/javascript'>
+  $(function() {
+
+   function mainmenu(){
+		$(" #nav ul ").css({display: "none"}); // Opera Fix
+		$(" #nav li").hover(function(){
+		$(this).find('ul:first').css({visibility: "visible",display: "none"}).show(200);
+		},function(){
+		$(this).find('ul:first').css({visibility: "hidden"});
+	});
+	}
+
+ 	$(document).ready(function(){
+		mainmenu();
+	});
+
+    $('#example-1').tipsy();
+
+    $('#north').tipsy({gravity: 'n'});
+    $('#south').tipsy({gravity: 's'});
+    $('#east').tipsy({gravity: 'e'});
+    $('#west').tipsy({gravity: 'w'});
+
+	$('.social_icons').tipsy({gravity: 's'});
+
+    $('#auto-gravity').tipsy({gravity: $.fn.tipsy.autoNS});
+
+    $('#example-fade').tipsy({fade: true});
+
+    $('#example-custom-attribute').tipsy({title: 'id'});
+    $('#example-callback').tipsy({title: function() { return this.getAttribute('original-title').toUpperCase(); } });
+    $('#example-fallback').tipsy({fallback: "Where's my tooltip yo'?" });
+
+    $('#example-html').tipsy({html: true });
+
+	/* This is basic - uses default settings */
+
+	$("a.image").fancybox();
+
+	/* Using custom settings */
+
+	$("a#inline").fancybox({
+			'hideOnContentClick': true
+	});
+
+	/* Apply fancybox to multiple items */
+
+	$("a.group").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600,
+		'speedOut'		:	200,
+		'overlayShow'	:	false
+	});
+
+	$(".youtube").click(function() {
+	$.fancybox({
+			'padding'		: 0,
+			'autoScale'		: false,
+			'transitionIn'	: 'none',
+			'transitionOut'	: 'none',
+			'title'			: this.title,
+			'width'		: 680,
+			'height'		: 495,
+			'href'			: this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+			'type'			: 'swf',
+			'swf'			: {
+			   	 'wmode'		: 'transparent',
+				'allowfullscreen'	: 'true'
+			}
+		});
+
+			return false;
+
+		});
+
+			$(".vimeo").click(function(){
+			$.fancybox({
+					'padding':0,
+					'autoScale':false,
+					'transitionIn':'none',
+					'transitionOut':'none',
+					'title':this.title,
+					'width':600,
+					'height':398,
+					'href':this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),'type':'swf'
+					});
+			return false;
+		});
+
+	});
+
+</script>
+<div id="wrapper">
+  <div id="top">
+    <div id="logo"><a href="index.html"><img src="images/images/logo.png" alt="大吉机械" /></a></div>
+  </div>
+  <div>
+    <ul id="nav">
+      <li><a href="index.html">首页</a> </li>
+      <li><a href="gongsijianjie.html">公司简介</a> </li>
+      <li><a href="#">产品信息</a>
+        <ul>
+          <li><a href="portfolio-grid-6.html">风管生产II III IV线</a></li>
+          <li><a href="portfolio-detail-11.html">数控等离子切割机</a></li>
+          <li><a href="portfolio-grid-7.html">共板法兰机系列</a></li>
+          <li><a href="portfolio-grid-8.html">剪板机系列</a></li>
+          <li><a href="portfolio-grid-14.html">咬口机/辘骨机系列</a></li>
+          <li><a href="portfolio-grid-16.html">折边机系列</a></li>
+          <li><a href="portfolio-grid-13.html">压筋机系列</a></li>
+          <li><a href="portfolio-detail-1.html">冲床角码模具</a></li>
+          <li><a href="portfolio-detail-2.html">电动手动卷料架</a></li>
+          <li><a href="portfolio-detail-3.html">电动手动辘线机</a></li>
+          <li><a href="portfolio-detail-4.html">电动手动偏三星卷板机</a></li>
+          <li><a href="portfolio-detail-5.html">电动液压铆钉机</a></li>
+          <li><a href="portfolio-detail-9.html">角铁卷圆机</a></li>
+          <li><a href="portfolio-detail-10.html">辘剪机(牛头剪)</a></li>
+          <li><a href="portfolio-detail-12.html">虾米弯头机</a></li>
+          <li><a href="portfolio-grid-15.html">液压-脚踏剪角机</a></li>
+        </ul>
+
+      </li>
+      <li><a href="kehufuwu.html">客户服务</a></li>
+      <li><a href="chanpinbaoyang.html">产品保养</a></li>
+      <li><a href="contact.html">联系方式</a></li>
+    </ul>
+  </div>
+  <div id="contentWrap">
+    <div id="breadcrumb">
+      <h4><span class="breadcrumb_link"><a href="index.html">Home</a></span> / <span class="breadcrumb_link"><a href="Portfolio-grid.html">产品</a></span> / <span class="breadcrumb_link"><a href="#">风管生产IV线</a></span></h4>
+    </div>
+    <!-- end breadctum -->
+    <div class="hr_line"></div>
+    <div class="intro">
+      <script type="text/javascript" charset="utf-8" async defer>
+        // how nav to specified product detail
+        // http://<domain>/portfolio.html?p=<pcode>
+        var p = location.search.replace(/^.*?\=/, '');
+        // document.write("<hx:include src='"+p+ ".html"+"'></hx:include>");
+      </script>
+      <h2>风管生产 IV 线</h2>
+<p>大吉全自动风管超级生产 4线自动完成卷板开卷、校平、压筋、剪角、压联合口单双口、压双侧共板法兰，该生产线占地小，组合方便，可以在现场施工，生产效率高，跟生产 5线相比，具有移动方便，投资小、见效快，生产效率高的特点，是一条标准的"小 5线"</p>
+
+    </div>
+    <div class="hr_line"></div>
+
+    <div id="content-two-third">
+      <div class="portfolio-detail-img">
+        <img src="images/portoflio/detail/p6-detail.jpg" alt="风管生产IV线" />
+      </div>
+
+      <div class="two-third ortfolio-detail">
+        <a href="gallery.html" title="更多照片">
+          <h4 class="">点击查看风管生产线实景照片(多图)</h4>
+        </a>
+        <p>
+          <h4>详情请咨询<span class="tel"> 4006-292-966</span></h4>
+        </p>
+      </div>
+      <div class="two-third portfolio-detail">
+        <p>
+          <h4>基本配置：</h4>
+          <ul class="bullets blue">
+            <li>料架一台(4料盘，最大承重 7吨)</li>
+            <li>导料架一个</li>
+            <li>主机一台</li>
+            <li>位移咬口机一台</li>
+            <li>传送平台一个</li>
+            <li>双机联动共板法兰机一台</li>
+            <li>电脑控制系统一套</li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="two-third portfolio-detail">
+        <p>
+          <img src="images/portoflio/detail/p6-feature.jpg" alt="风管生产IV线">
+        </p>
+      </div>
+      <div class="hr"></div>
+
+      <div class="two-third portfolio-detail"> <img class="icon_left" src="images/icons/monitor.png" alt="icon" />
+        <h2>技术参数</h2>
+        <p><table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:22.85pt'>
+  <td width=83 rowspan=2 style='width:62.2pt;border:solid windowtext 1.0pt;
+  background:#99CCFF;padding:0cm 5.4pt 0cm 5.4pt;height:22.85pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-size:9.0pt;font-family:宋体'>型号</span></b></p>
+  </td>
+  <td width=83 rowspan=2 style='width:62.3pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#99CCFF;padding:0cm 5.4pt 0cm 5.4pt;height:22.85pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:10.0pt'><b><span
+  style='font-size:9.0pt;font-family:宋体'>加工板厚</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:10.0pt'><b><span
+  lang=EN-US style='font-size:9.0pt'>(mm)</span></b></p>
+  </td>
+  <td width=117 rowspan=2 style='width:87.9pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#99CCFF;padding:0cm 5.4pt 0cm 5.4pt;height:22.85pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:10.0pt'><b><span
+  style='font-size:9.0pt;font-family:宋体'>最大工作速度</span></b><b><span lang=EN-US
+  style='font-size:9.0pt'>(m/min)</span></b></p>
+  </td>
+  <td width=120 rowspan=2 style='width:90.0pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#99CCFF;padding:0cm 5.4pt 0cm 5.4pt;height:22.85pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:10.0pt'><b><span
+  style='font-size:9.0pt;font-family:宋体'>加工最大板宽</span></b><b><span lang=EN-US
+  style='font-size:9.0pt'>(mm)</span></b></p>
+  </td>
+  <td width=120 rowspan=2 style='width:90.0pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#99CCFF;padding:0cm 5.4pt 0cm 5.4pt;height:22.85pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:10.0pt'><b><span
+  style='font-size:9.0pt;font-family:宋体'>卷料最大重量</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:10.0pt'><b><span
+  lang=EN-US style='font-size:9.0pt'>(kg)</span></b></p>
+  </td>
+  <td width=155 colspan=3 style='width:116.4pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#99CCFF;padding:0cm 5.4pt 0cm 5.4pt;height:22.85pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:11.0pt'><b><span
+  style='font-size:9.0pt;font-family:宋体'>外形尺寸</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:11.0pt'><b><span
+  lang=EN-US style='font-size:9.0pt'>(mm)</span></b></p>
+  </td>
+  <td width=80 rowspan=2 style='width:60.3pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#99CCFF;padding:0cm 5.4pt 0cm 5.4pt;height:22.85pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:10.0pt'><b><span
+  style='font-size:9.0pt;font-family:宋体'>重量</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:10.0pt'><b><span
+  lang=EN-US style='font-size:9.0pt'>(kg)</span></b></p>
+  </td>
+  <td width=112 rowspan=2 style='width:84.3pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#99CCFF;padding:0cm 5.4pt 0cm 5.4pt;height:22.85pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:10.0pt'><b><span
+  style='font-size:9.0pt;font-family:宋体'>电机总功率</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:10.0pt'><b><span
+  lang=EN-US style='font-size:9.0pt'>(kw)</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:3.5pt'>
+  <td width=52 style='width:38.8pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#99CCFF;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.5pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:10.0pt'><b><span
+  style='font-size:9.0pt;font-family:宋体'>长</span></b><b><span lang=EN-US
+  style='font-size:9.0pt'>(mm)</span></b></p>
+  </td>
+  <td width=52 style='width:38.8pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#99CCFF;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.5pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:10.0pt'><b><span
+  style='font-size:9.0pt;font-family:宋体'>宽</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:10.0pt'><b><span
+  lang=EN-US style='font-size:9.0pt'>(mm)</span></b></p>
+  </td>
+  <td width=52 style='width:38.8pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;background:#99CCFF;
+  padding:0cm 5.4pt 0cm 5.4pt;height:3.5pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:10.0pt'><b><span
+  style='font-size:9.0pt;font-family:宋体'>高</span></b></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:10.0pt'><b><span
+  lang=EN-US style='font-size:9.0pt'>(mm)</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=83 valign=top style='width:62.2pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt'>AML-IV</span></b></p>
+  </td>
+  <td width=83 valign=top style='width:62.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt'>0.5-1.2</span></b></p>
+  </td>
+  <td width=117 valign=top style='width:87.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt'>15</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt'>1250</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:90.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt'>8000</span></b></p>
+  </td>
+  <td width=52 valign=top style='width:38.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt'>18500</span></b></p>
+  </td>
+  <td width=52 valign=top style='width:38.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt'>3600</span></b></p>
+  </td>
+  <td width=52 valign=top style='width:38.8pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt'>1500</span></b></p>
+  </td>
+  <td width=80 valign=top style='width:60.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt'>7400</span></b></p>
+  </td>
+  <td width=112 valign=top style='width:84.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt'>25</span></b></p>
+  </td>
+ </tr>
+
+</table>
+</p>
+      </div>
+    </div>
+
+    <div id="column" class="right">
+
+      <div class="blog_widget">
+        <h4>快速导航</h4>
+        <div>
+          <ul class="sidenav">
+            <li><a href="portfolio-grid-6.html">风管生产II III IV线</a></li>
+            <li><a href="portfolio-detail-11.html">数控等离子切割机</a></li>
+            <li><a href="portfolio-grid-7.html">共板法兰机系列</a></li>
+            <li><a href="portfolio-grid-8.html">剪板机系列</a></li>
+            <li><a href="portfolio-grid-14.html">咬口机/辘骨机系列</a></li>
+            <li><a href="portfolio-grid-16.html">折边机系列</a></li>
+            <li><a href="portfolio-grid-13.html">压筋机系列</a></li>
+            <li><a href="portfolio-detail-1.html">冲床角码模具</a></li>
+            <li><a href="portfolio-detail-2.html">电动手动卷料架</a></li>
+            <li><a href="portfolio-detail-3.html">电动手动辘线机</a></li>
+            <li><a href="portfolio-detail-4.html">电动手动偏三星卷板机</a></li>
+            <li><a href="portfolio-detail-5.html">电动液压铆钉机</a></li>
+            <li><a href="portfolio-detail-9.html">角铁卷圆机</a></li>
+            <li><a href="portfolio-detail-10.html">辘剪机(牛头剪)</a></li>
+            <li><a href="portfolio-detail-12.html">虾米弯头机</a></li>
+            <li><a href="portfolio-grid-15.html">液压-脚踏剪角机</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="blog_widget">
+        <h4>立即致电了解详情</h4>
+        <ul class="bullets blue">
+          <li>联系人：黄经理</li>
+            <li>热线：4006-292-966</li>
+            <li>电话：0555-6061300</li>
+            <li>传真：0555-6061322</li>
+            <li>手机：15655591660</li>
+            <li>网址：http://www.dajijixie.com</li>
+            <li>电邮：daji&#64;dajijixie.com</li>
+            <li>厂址：安徽省马鞍山市博望区西工业园</li>
+          </ul>
+      </div>
+    </div>
+
+  </div>
+  <div id="footer">
+    <h4>Daji © 2013 All rights reserved. </h4>
+  </div>
+</div>
+
+<div class="bottom">
+</div>
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ff650ee43fe85410c589fd08997cf86f5' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script src="http://v1.cnzz.com/z_stat.php?id=1000276618&web_id=1000276618" language="JavaScript"></script>
+</body>
+</html>

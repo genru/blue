@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>大吉机械 | 风管生产线</title>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="Scripts/jquery.min.js"></script>
+
+<!-- Tooltip -->
+<script type="text/javascript" src="Scripts/jquery.tipsy.js"></script>
+
+<!-- fade in/fade out -->
+<script type="text/javascript" src="Scripts/jquery.innerfade.js"></script>
+
+<!-- fancy box -->
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+</head>
+
+<body>
+
+<script type='text/javascript'>
+  $(document).ready(function() {
+
+    function mainmenu(){
+        $(" #nav ul ").css({display: "none"}); // Opera Fix
+        $(" #nav li").hover(function(){
+        $(this).find('ul:first').css({visibility: "visible",display: "none"}).show(200);
+        },function(){
+        $(this).find('ul:first').css({visibility: "hidden"});
+    });
+    }
+
+    $(document).ready(function(){
+        mainmenu();
+    });
+
+    $('#example-1').tipsy();
+
+    $('#north').tipsy({gravity: 'n'});
+    $('#south').tipsy({gravity: 's'});
+    $('#east').tipsy({gravity: 'e'});
+    $('#west').tipsy({gravity: 'w'});
+
+    $('.social_icons').tipsy({gravity: 's'});
+
+    $('#auto-gravity').tipsy({gravity: $.fn.tipsy.autoNS});
+
+    $('#example-fade').tipsy({fade: true});
+
+    $('#example-custom-attribute').tipsy({title: 'id'});
+    $('#example-callback').tipsy({title: function() { return this.getAttribute('original-title').toUpperCase(); } });
+    $('#example-fallback').tipsy({fallback: "Where's my tooltip yo'?" });
+
+    $('#example-html').tipsy({html: true });
+
+    /* This is basic - uses default settings */
+
+    $("a.project-list-thumb").fancybox();
+
+    /* Using custom settings */
+
+    $("a#inline").fancybox({
+            'hideOnContentClick': true
+    });
+
+    /* Apply fancybox to multiple items */
+
+    $("a.group").fancybox({
+        'transitionIn'  :   'elastic',
+        'transitionOut' :   'elastic',
+        'speedIn'       :   600,
+        'speedOut'      :   200,
+        'overlayShow'   :   false
+    });
+
+    $(".youtube").click(function() {
+    $.fancybox({
+            'padding'       : 0,
+            'autoScale'     : false,
+            'transitionIn'  : 'none',
+            'transitionOut' : 'none',
+            'title'         : this.title,
+            'width'     : 680,
+            'height'        : 495,
+            'href'          : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+            'type'          : 'swf',
+            'swf'           : {
+                 'wmode'        : 'transparent',
+                'allowfullscreen'   : 'true'
+            }
+        });
+
+    return false;
+
+});
+
+    $(".vimeo").click(function(){
+    $.fancybox({
+            'padding':0,
+            'autoScale':false,
+            'transitionIn':'none',
+            'transitionOut':'none',
+            'title':this.title,
+            'width':600,
+            'height':398,
+            'href':this.href.replace(new RegExp("([0-9])","i"),'moogaloop.swf?clip_id=$1'),'type':'swf'
+            });
+    return false;
+});
+
+});
+
+</script>
+
+<div id="wrapper">
+  <div id="top">
+    <div id="logo"><a href="index.html"><img src="images/images/logo.png" alt="Full moon" /></a></div>
+  </div>
+  <div>
+    <ul id="nav">
+      <li><a href="index.html">首页</a> </li>
+      <li><a href="gongsijianjie.html">公司简介</a> </li>
+      <li><a href="#">产品信息</a>
+        <ul>
+          <li><a href="portfolio-grid-6.html">风管生产II III IV线</a></li>
+          <li><a href="portfolio-detail-11.html">数控等离子切割机</a></li>
+          <li><a href="portfolio-grid-7.html">共板法兰机系列</a></li>
+          <li><a href="portfolio-grid-8.html">剪板机系列</a></li>
+          <li><a href="portfolio-grid-14.html">咬口机/辘骨机系列</a></li>
+          <li><a href="portfolio-grid-16.html">折边机系列</a></li>
+          <li><a href="portfolio-grid-13.html">压筋机系列</a></li>
+          <li><a href="portfolio-detail-1.html">冲床角码模具</a></li>
+          <li><a href="portfolio-detail-2.html">电动手动卷料架</a></li>
+          <li><a href="portfolio-detail-3.html">电动手动辘线机</a></li>
+          <li><a href="portfolio-detail-4.html">电动手动偏三星卷板机</a></li>
+          <li><a href="portfolio-detail-5.html">电动液压铆钉机</a></li>
+          <li><a href="portfolio-detail-9.html">角铁卷圆机</a></li>
+          <li><a href="portfolio-detail-10.html">辘剪机(牛头剪)</a></li>
+          <li><a href="portfolio-detail-12.html">虾米弯头机</a></li>
+          <li><a href="portfolio-grid-15.html">液压-脚踏剪角机</a></li>
+        </ul>
+
+      </li>
+      <li><a href="kehufuwu.html">客户服务</a></li>
+      <li><a href="chanpinbaoyang.html">产品保养</a></li>
+      <li><a href="contact.html">联系方式</a></li>
+    </ul>
+  </div>
+  <div id="contentWrap">
+  <div id="breadcrumb">
+      <h4><span class="breadcrumb_link"><a href="index.html">Home</a></span> / <span class="breadcrumb_link"><a href="index.html">产品</a></span> / <span class="breadcrumb_link">风管生产线</span></h4>
+    </div>
+    <!-- end breadctum -->
+    <div class="hr_line"></div>
+    <div class="intro">
+      <h2>风管生产线</h2>
+      <p>全自动风管超级生产线自动完成卷板开卷、校平、压筋、剪角、压联合口单双口、压双侧共板法兰，该生产线占地小，组合方便，可以在现场施工，生产效率高等特点.</p>
+    </div>
+    <div class="hr_line"></div>
+    <div id="content-full">
+      <div class="portfolio-grid-full-page">
+        <div class="portfolio-grid">
+            <div class="portfolio-grid-image"><a href="portfolio-detail-6.html"><img src="images/portoflio/grid/portfolio-grid-06.jpg" alt="风管生产II III线" /></a></div>
+            <div class="hr"></div>
+          <div class="portfolio-grid-text">
+            <h3><a href="portfolio-detail-6.html">风管生产 II III 线</a></h3>
+            <p>大吉全自动风管超级生产 2,3线自动完成卷板开卷、校平、压筋、剪角、压联合口单双口、压双侧共板法兰，该生产线占地小，组合方便，可以在现场施工...</p>
+            </div>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-grid-image"><a href="portfolio-detail-6-1.html"><img src="images/portoflio/grid/portfolio-grid-06.jpg" alt="风管生产四线" /></a></div>
+            <div class="hr"></div>
+          <div class="portfolio-grid-text">
+            <h3><a href="portfolio-detail-6-1.html">风管生产 IV 线</a></h3>
+            <p>全自动风管超级生产 4线自动完成卷板开卷、校平、压筋、剪角、压联合口单双口、压双侧共板法兰，该生产线占地小，组合方便，可以在现场施工...</p>
+            </div>
+        </div>
+
+
+<!--         <div class="portfolio-grid">
+            <div class="portfolio-grid-image"><a href="portfolio-detail-5.html"><img src="images/portoflio/grid/portfolio-grid-02.jpg" alt="Project title" /></a></div>
+            <div class="hr"></div>
+          <div class="portfolio-grid-text">
+            <h3><a href="#">Project title</a></h3>
+            <p> Sir Francis watched the procession with a sad countenance, and, turning to the guide, said, &quot;A suttee.&quot; The Parsee nodded, and put his finger to his lips. </p>
+            </div>
+        </div>
+ -->
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <h4>Daji Machine Ltd. © 2013 All rights reserved. <!-- Powered by: <span class="link"><a href="http://themeforest.net/user/agurghis?ref=agurghis" class="footer_link">Chris</a></span> --></h4>
+  </div>
+</div>
+
+<div class="bottom">
+</div>
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ff650ee43fe85410c589fd08997cf86f5' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script src="http://v1.cnzz.com/z_stat.php?id=1000276618&web_id=1000276618" language="JavaScript"></script>
+</body>
+</html>
