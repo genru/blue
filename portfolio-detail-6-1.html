@@ -20,7 +20,6 @@
 <!-- fancy box -->
 <script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 <script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 </head>
 
 <body>
@@ -173,7 +172,7 @@
 
     <div id="content-two-third">
       <div class="portfolio-detail-img">
-        <img src="images/portoflio/detail/p6-detail.jpg" alt="风管生产IV线" />
+        <img src="images/portoflio/detail/p6-1-detail.jpg" alt="风管生产IV线" />
       </div>
 
       <div class="two-third ortfolio-detail">
@@ -201,8 +200,9 @@
 
       <div class="two-third portfolio-detail">
         <p>
-          <img src="images/portoflio/detail/p6-feature.jpg" alt="风管生产IV线">
+          <div><a class="image" href="images/gallery/fg4.jpg"><img src="images/portoflio/detail/p6-1-feature-1.jpg" alt="风管生产线细节" /></a></div>
         </p>
+
       </div>
       <div class="hr"></div>
 
@@ -405,6 +405,12 @@
 
 <div class="bottom">
 </div>
+<script type='text/javascript'>
+  $(document).ready(function() {
+      $("a.image").fancybox();
+  });
+
+</script>
 
 <script type="text/javascript">
 var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
